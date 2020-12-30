@@ -1,0 +1,18 @@
+with open('input.txt', 'r') as input_file:
+    correct_passwords = 0 
+    for line in input_file:
+        line = line.replace(": ", " ").replace("-", " ") 
+        # removes : and , replaces these with spaces
+        line = line.split(" ")
+        # splits at each space
+
+        min = int(line[0])
+        max = int(line[1])
+        char = line[2]
+        password = line[3]
+        count = password.count(char)
+
+        if min <= count <= max:
+            correct_passwords += 1 
+
+    print(correct_passwords)        
