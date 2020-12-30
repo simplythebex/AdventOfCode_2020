@@ -1,3 +1,6 @@
+#Part 1: find two entries in the raw data that add to total 2020. Multiply these data points and return the answer.
+#Part 2: find three entries in the raw data that add to total 2020. Multiply these data points and return the answer.
+
 with open('advent_1_input.txt', 'r') as input_text:
     numbers = [int(num) for num in input_text] #changes to integers
 
